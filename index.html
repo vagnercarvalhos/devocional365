@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devocional365</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menu fixo com hambúrguer -->
+    <nav class="navbar">
+        <div class="nav-logo">Devocional365</div>
+        <div class="hamburger" id="hamburger">☰</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.palavraevidas.devocional365&hl=pt_BR" target="_blank">Download</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="logo.png" alt="Logo Devocional365" class="logo">
+        <h1>Devocional365</h1>
+        <p>Um guia diário para fortalecer sua fé e viver a Palavra de Deus.</p>
+    </header>
+
+    <section id="sobre" class="intro">
+        <h2>Sobre o Aplicativo</h2>
+        <p>
+            O <strong>Devocional365</strong> é um aplicativo que oferece leituras diárias, planos bíblicos e reflexões
+            para acompanhar você em sua caminhada espiritual. Com ele, você pode organizar sua rotina de leitura,
+            acessar devocionais offline e encontrar inspiração em diversas áreas da vida cristã.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.palavraevidas.devocional365&hl=pt_BR" target="_blank" class="btn">
+            Baixar na Play Store
+        </a>
+    </section>
+
+    <section id="recursos" class="features">
+        <h2>Recursos</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="tela1.png" alt="Tela Bíblia Sagrada">
+                <h3>Plano de Leitura</h3>
+                <p>Complete a Bíblia em 365 dias com um plano estruturado.</p>
+            </div>
+            <div class="card">
+                <img src="tela2.png" alt="Tela Categorias">
+                <h3>Categorias</h3>
+                <p>Encontre devocionais sobre fé, ansiedade, casamento, finanças e muito mais.</p>
+            </div>
+            <div class="card">
+                <img src="tela3.png" alt="Tela Devocional Diário">
+                <h3>Devocional Diário</h3>
+                <p>Receba mensagens inspiradoras e versículos para cada dia.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Devocional365 - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para menu hambúrguer -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
